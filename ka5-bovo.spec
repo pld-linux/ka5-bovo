@@ -1,15 +1,15 @@
-%define		kdeappsver	19.04.1
+%define		kdeappsver	20.12.3
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		bovo
 Summary:	A Gomoku like game
 Name:		ka5-%{kaname}
-Version:	19.04.1
+Version:	20.12.3
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
-Source0:	http://download.kde.org/stable/applications/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	59a004ea2f33960ee527b3d5c65316e8
+Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
+# Source0-md5:	f30ed5e0a061aff22e92dba3ca26e68b
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Concurrent-devel
 BuildRequires:	Qt5Core-devel >= %{qtver}
@@ -77,6 +77,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/32x32/apps/bovo.png
 %{_iconsdir}/hicolor/48x48/apps/bovo.png
 %{_iconsdir}/hicolor/64x64/apps/bovo.png
-%dir %{_datadir}/kxmlgui5/bovo
-%{_datadir}/kxmlgui5/bovo/bovoui.rc
 %{_datadir}/metainfo/org.kde.bovo.appdata.xml
