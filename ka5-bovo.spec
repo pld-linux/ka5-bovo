@@ -41,6 +41,9 @@ alternate in placing their respective pictogram on the game board.
 (Also known as: Connect Five, Five in a row, X and O, Naughts and
 Crosses)
 
+%description -l pl.UTF-8
+Bovo to gra w kółko i krzyżyk (do pięciu w rzędzie).
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
