@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	22.08.1
+%define		kdeappsver	22.08.2
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		bovo
 Summary:	A Gomoku like game
 Name:		ka5-%{kaname}
-Version:	22.08.1
-Release:	3
+Version:	22.08.2
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	8adcc29296084e67f8497e6e238e4bb1
+# Source0-md5:	b3ee5a161af09a1aa61531496ed8179b
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Concurrent-devel
 BuildRequires:	Qt5Core-devel >= %{qtver}
